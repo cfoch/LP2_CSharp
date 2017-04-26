@@ -50,6 +50,7 @@
     <Compile Include="CLASES\Administrador.cs" />
     <Compile Include="CLASES\BoletaVenta.cs" />
     <Compile Include="CLASES\Cliente.cs" />
+    <Compile Include="CLASES\Curso.cs" />
     <Compile Include="CLASES\Empleado.cs" />
     <Compile Include="CLASES\Empresa.cs" />
     <Compile Include="CLASES\Entrenador.cs" />
@@ -60,6 +61,12 @@
     </Compile>
     <Compile Include="FORMULARIOS\AgregarTurno.Designer.cs">
       <DependentUpon>AgregarTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\frmRegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\frmRegistrarCliente.designer.cs">
+      <DependentUpon>frmRegistrarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="FORMULARIOS\frmAgregarProducto.cs">
       <SubType>Form</SubType>
@@ -72,6 +79,12 @@
     </Compile>
     <Compile Include="FORMULARIOS\frmAgregarServicio.Designer.cs">
       <DependentUpon>frmAgregarServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\frmCrearCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\frmCrearCurso.designer.cs">
+      <DependentUpon>frmCrearCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="FORMULARIOS\frmCrearMembresia.cs">
       <SubType>Form</SubType>
@@ -109,7 +122,6 @@
     <Compile Include="FORMULARIOS\frmRegistrarVenta.Designer.cs">
       <DependentUpon>frmRegistrarVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLASES\Mecanico.cs" />
     <Compile Include="CLASES\Membresia.cs" />
     <Compile Include="CLASES\MembresiaXCliente.cs" />
     <Compile Include="CLASES\Persona.cs" />
@@ -126,11 +138,17 @@
     <EmbeddedResource Include="FORMULARIOS\AgregarTurno.resx">
       <DependentUpon>AgregarTurno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\frmRegistrarCliente.resx">
+      <DependentUpon>frmRegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\frmAgregarProducto.resx">
       <DependentUpon>frmAgregarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\frmAgregarServicio.resx">
       <DependentUpon>frmAgregarServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\frmCrearCurso.resx">
+      <DependentUpon>frmCrearCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMULARIOS\frmCrearMembresia.resx">
       <DependentUpon>frmCrearMembresia.cs</DependentUpon>
