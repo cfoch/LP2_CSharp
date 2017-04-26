@@ -54,6 +54,7 @@
     <Compile Include="CLASES\Empresa.cs" />
     <Compile Include="CLASES\Entrenador.cs" />
     <Compile Include="CLASES\Factura.cs" />
+    <Compile Include="CLASES\Producto.cs" />
     <Compile Include="FORMULARIOS\AgregarTurno.cs">
       <SubType>Form</SubType>
     </Compile>

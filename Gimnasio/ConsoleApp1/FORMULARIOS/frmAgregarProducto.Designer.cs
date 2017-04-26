@@ -56,6 +56,7 @@
             this.btnEliminar.TabIndex = 21;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGuardar
             // 
@@ -65,6 +66,7 @@
             this.btnGuardar.TabIndex = 20;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
@@ -74,6 +76,7 @@
             this.btnEditar.TabIndex = 19;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -83,6 +86,7 @@
             this.btnNuevo.TabIndex = 18;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // dgvProductos
             // 
@@ -91,6 +95,7 @@
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.Size = new System.Drawing.Size(377, 108);
             this.dgvProductos.TabIndex = 16;
+            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
             // groupBox1
             // 
@@ -110,6 +115,7 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtPrecioProd
             // 
@@ -138,6 +144,7 @@
             this.txtNombProd.Name = "txtNombProd";
             this.txtNombProd.Size = new System.Drawing.Size(213, 20);
             this.txtNombProd.TabIndex = 6;
+            this.txtNombProd.TextChanged += new System.EventHandler(this.txtNombProd_TextChanged);
             // 
             // txtIdProducto
             // 
@@ -204,6 +211,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAgregarProducto";
             this.Text = "Administración de Productos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAgregarProducto_FormClosing);
+            this.Load += new System.EventHandler(this.frmAgregarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
