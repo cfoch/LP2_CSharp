@@ -35,11 +35,12 @@
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnAdquirir = new System.Windows.Forms.Button();
             this.lblCantProd = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.cmbSelect = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -104,14 +105,14 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // btnImprimir
+            // btnAdquirir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(487, 392);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir.TabIndex = 7;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnAdquirir.Location = new System.Drawing.Point(487, 392);
+            this.btnAdquirir.Name = "btnAdquirir";
+            this.btnAdquirir.Size = new System.Drawing.Size(75, 23);
+            this.btnAdquirir.TabIndex = 7;
+            this.btnAdquirir.Text = "Adquirir";
+            this.btnAdquirir.UseVisualStyleBackColor = true;
             // 
             // lblCantProd
             // 
@@ -129,33 +130,43 @@
             this.numericUpDown1.Size = new System.Drawing.Size(153, 20);
             this.numericUpDown1.TabIndex = 10;
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(487, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(487, 74);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 11;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbSelect
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(52, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(510, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cmbSelect.FormattingEnabled = true;
+            this.cmbSelect.Location = new System.Drawing.Point(176, 36);
+            this.cmbSelect.Name = "cmbSelect";
+            this.cmbSelect.Size = new System.Drawing.Size(386, 21);
+            this.cmbSelect.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "¿Qué desea adquirir?";
             // 
             // frmRegistrarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 441);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbSelect);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.lblCantProd);
-            this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.btnAdquirir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvProductos);
@@ -182,10 +193,11 @@
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnAdquirir;
         private System.Windows.Forms.Label lblCantProd;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ComboBox cmbSelect;
+        private System.Windows.Forms.Label label1;
     }
 }

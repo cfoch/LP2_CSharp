@@ -334,7 +334,7 @@
             this.Controls.Add(this.gbDatosPers1);
             this.Controls.Add(this.gbOficio);
             this.Name = "frmCrearEmpleado";
-            this.Text = "frmCrearEntrenador";
+            this.Text = "Crear Entrenador";
             this.gbDatosPers1.ResumeLayout(false);
             this.gbDatosPers1.PerformLayout();
             this.gbOficio.ResumeLayout(false);
